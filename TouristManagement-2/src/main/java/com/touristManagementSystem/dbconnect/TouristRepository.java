@@ -1,6 +1,7 @@
-package com.touristManagement.dbconnect;
+package com.touristManagementSystem.dbconnect;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.touristManagementSystem.model.TouristMaster;
 
