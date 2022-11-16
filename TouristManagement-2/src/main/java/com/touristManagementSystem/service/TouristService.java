@@ -9,15 +9,9 @@ import com.touristManagementSystem.model.TouristMaster;
 
 @Service
 public class TouristService {
-	@Autowired
-	public TouristService(TouristRepository touristRepository) {
-		super();
-		this.touristRepository = touristRepository;
-	}
 
 	@Autowired
 	private TouristRepository touristRepository;
-	
 	
 	
 	public List<TouristMaster> getData() {
