@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.touristManagementSystem.model.TouristMaster;
 
+@Repository
 public interface TouristRepository extends JpaRepository<TouristMaster, Integer>{
 
 }

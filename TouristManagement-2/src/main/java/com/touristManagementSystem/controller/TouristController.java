@@ -69,7 +69,7 @@ public class TouristController {
 		}
 
 		touristService.saveData(touristMaster);
-		mv.addObject("tourist",touristMaster);
+		mv.addObject("Tourist",touristMaster);
 		return mv;
 	}
 	
