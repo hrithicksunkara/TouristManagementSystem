@@ -13,13 +13,17 @@ public class TouristService {
 	@Autowired
 	private TouristRepository touristRepository;
 	
+	@Autowired
+	public TouristService(TouristRepository touristRepository) {
+		super();
+		this.touristRepository = touristRepository;
+	}
 	
 	public List<TouristMaster> getData() {
 		return touristRepository.findAll();
 	}
 	
 	public void saveData(TouristMaster touristMaster) {
-		touristRepository.save(touristMaster);
+		this.touristRepository.save(touristMaster);
 	}
-
 }
