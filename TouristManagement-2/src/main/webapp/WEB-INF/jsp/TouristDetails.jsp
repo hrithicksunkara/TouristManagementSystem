@@ -34,10 +34,10 @@ TouristMaster tourist = (TouristMaster)request.getAttribute("Tourist");
 <p>Address:<%= tourist.getAddress()%></p>
 <p>Tour Date:<%=tourist.getTourDate()%></p>
 <p>Booking Amount:<%= tourist.getBookingAmount() %></p>
- <p>Phone Number1:<%= tourist.getPhoneNumbers().get(0) %></p>
+ <p>Phone Number1:<%= tourist.getPhoneNumbers().get(0).getContactNumber() %></p>
 
-<p>Phone Number2:<%= tourist.getPhoneNumbers().get(1) %></p>
-<p>Phone Number3:<%= tourist.getPhoneNumbers().get(2) %></p>
+<p>Phone Number2:<%= tourist.getPhoneNumbers().get(1).getContactNumber() %></p>
+<p>Phone Number3:<%= tourist.getPhoneNumbers().get(2).getContactNumber() %></p>
 
 
 <a href="/index">Return</a>
