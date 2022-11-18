@@ -21,12 +21,12 @@
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="text-align: center">
-	<h2 style="color: blue; font-family: Lucida Sans;">Add New Tourist</h2>
+	<h2 style="color: Red; font-family: Lucida Sans;">Add New Tourist</h2>
 	<p style="text-align: center">* marked items entry is compulsory</p>
 
-	<form action="/save" method="post" modelAttribute="Tourist">
+	<form action="/save" method="post">
 	
-		Tourist ID: <input type="text" name="touristId" placeholder="teamId"><br>
+		<!-- - --Tourist ID: <input type="text" name="touristId" placeholder="teamId"><br>--->
 		<br> *Enter Tourist Name: <input type="text" name="touristName"
 			placeholder="Name" required><br> <br> *Enter
 		Address: <input type="text" name="address" placeholder="address"

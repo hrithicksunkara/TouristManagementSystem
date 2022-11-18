@@ -38,10 +38,5 @@ public class TouristContact {
 	public void setTouristMaster(TouristMaster touristMaster) {
 		this.touristMaster = touristMaster;
 	}
-
-	@Override
-	public String toString() {
-		return "TouristContact [contactNumber=" + contactNumber + ", touristMaster=" + touristMaster + "]";
-	}
 	
 }

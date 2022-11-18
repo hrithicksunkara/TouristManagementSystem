@@ -7,7 +7,8 @@ import javax.persistence.*;
 @Table(name="tourist_master")
 public class TouristMaster {
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(generator = "ID", strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "ID", initialValue = 1000, allocationSize = 1)
     @Column(name="tourist_id",nullable=true)
 	private int touristId;
     
@@ -89,13 +90,6 @@ public class TouristMaster {
 
 	public void setBookingAmount(float bookingAmount) {
 		this.bookingAmount = bookingAmount;
-	}
-
-	@Override
-	public String toString() {
-		return "TouristMaster [touristId=" + touristId + ", touristName=" + touristName + ", address=" + address
-				+ ", tourDate=" + tourDate + ", bookingAmount=" + bookingAmount + ", phoneNumbers=" + phoneNumbers
-				+ "]";
 	}
 	}
 

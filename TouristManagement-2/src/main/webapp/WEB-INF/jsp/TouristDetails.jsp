@@ -3,6 +3,7 @@
     <%@ page import = "java.util.*" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ page import = "com.touristManagementSystem.model.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,15 +23,22 @@
 
 <body  style="text-align:center">
 <h1>Tourist Details</h1>
+<%
+TouristMaster tourist = (TouristMaster)request.getAttribute("Tourist");
+//TouristContact touristContact = (TouristContact)request.getAttribute("Tourist2");
+//TouristContact touristContact2 = (TouristContact)request.getAttribute("Tourist3");
+//TouristContact touristContact3 = (TouristContact)request.getAttribute("Tourist4");
+%>
+<p>Tourist Id:<%= tourist.getTouristId() %></p>
+<p>Tourist Name:<%= tourist.getTouristName()%></p>
+<p>Address:<%= tourist.getAddress()%></p>
+<p>Tour Date:<%=tourist.getTourDate()%></p>
+<p>Booking Amount:<%= tourist.getBookingAmount() %></p>
+ <p>Phone Number1:<%= tourist.getPhoneNumbers().get(0) %></p>
 
-<p>Tourist Id:${tourist.touristId}</p>
-<p>Tourist Name:${tourist.touristName}</p>
-<p>Address:${tourist.address}</p>
-<p>Tour Date:${tourist.tourDate}</p>
-<p>Booking Amount:${tourist.bookingAmount}</p>
-<p>Phone Number1:${tourist.phoneNumber1}</p>
-<p>Phone Number2:${tourist.phoneNumber2}</p>
-<p>Phone Number3:${tourist.phoneNumber3}</p>
+<p>Phone Number2:<%= tourist.getPhoneNumbers().get(1) %></p>
+<p>Phone Number3:<%= tourist.getPhoneNumbers().get(2) %></p>
+
 
 <a href="/index">Return</a>
 
