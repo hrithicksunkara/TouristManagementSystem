@@ -27,6 +27,7 @@
 	<form action="/save" method="post">
 	
 		<!-- - --Tourist ID: <input type="text" name="touristId" placeholder="teamId"><br>--->
+		
 		<br> *Enter Tourist Name: <input type="text" name="touristName"
 			placeholder="Name" required><br> <br> *Enter
 		Address: <input type="text" name="address" placeholder="address"
